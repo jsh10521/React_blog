@@ -17,8 +17,7 @@ import thank from "./images/thank.gif"
 
 export default function Javascript() {
   return (
-    <>
-        
+    <div className="javatotal">
         <div className="j_title"> [JavaScript] 핵심 문법</div>
         
         <img className="hello" src="https://r1.community.samsung.com/t5/image/serverpage/image-id/7111571iA3328A1197EB101E/image-size/large?v=v2&px=999" alt="hello" />
@@ -45,15 +44,15 @@ export default function Javascript() {
         <div className="h2">
             var: 호이스팅 + 함수 스코프 + 중복, 초기화 없이 선언 가능
         </div>
-        <img src={var1} alt="var" />
+        <img className="p" src={var1} alt="var" />
         <div className="h2">
             let: 재할당 가능 + 블록 스코프
         </div>
-        <img src={let1} alt="let" />
+        <img className="p" src={let1} alt="let" />
         <div className="h2">
             const: 불변(immutable) 변수 선언 + 블록 스코프
         </div>
-        <img src={const1} alt="const" />
+        <img className="p" src={const1} alt="const" />
 
         <div className="h2">
             호이스팅(Hoisting)이란?
@@ -62,7 +61,7 @@ export default function Javascript() {
             자바스크립트에서 변수 선언이 코드의 맨 위로 끌어올려지는 
             동작 방식을 말하고 있습니다.
         </div>
-        <img src={hoisting} alt="hoisting" />
+        <img className="p" src={hoisting} alt="hoisting" />
         <div className="h2">
             var의 경우
         </div>
@@ -94,7 +93,7 @@ export default function Javascript() {
         <div className="h">
             객체나 배열에서 필요한 값만 변수로 꺼내서 할당하는 문법입니다.
         </div>
-        <img src={structure} alt="structure" />
+        <img className="p" src={structure} alt="structure" />
         <div className="h">
             Key(속성 이름)을 기준으로 값을 불러 올수 있어서 코드를 깔끔하게 
             작성할 수 있습니다.
@@ -108,22 +107,22 @@ export default function Javascript() {
         <div className="h">
             1. 배열에서 Spread
         </div>
-        <img src={spread1} alt="spread1" />
+        <img className="p" src={spread1} alt="spread1" />
         <div className="h">
             2. 객체에서 Spread
         </div>
-        <img src={spread2} alt="spread2" />
+        <img className="p" src={spread2} alt="spread2" />
         <div className="h2">
             Rest: 나머지를 묶기
         </div>
         <div className="h">
             1. 배열에서 Rest
         </div>
-        <img src={rest1} alt="rest1" />
+        <img className="p" src={rest1} alt="rest1" />
         <div className="h">
             2. 객체에서 Rest
         </div>
-        <img src={rest2} alt="rest2" />
+        <img className="p" src={rest2} alt="rest2" />
         <div className="h2">
             정리하면...
         </div>
@@ -139,11 +138,11 @@ export default function Javascript() {
         <div className="h2">
             function함수 사용
         </div>
-        <img src={function1} alt="function1" />
+        <img className="p" src={function1} alt="function1" />
         <div className="h2">
-            화살표 함수(=>) 사용
+            화살표 함수 사용
         </div>
-        <img src={arrow} alt="arrow" />
+        <img className="p" src={arrow} alt="arrow" />
         <div className="h">
             함수를 짧게 쓸 수 있다는 것도 장점이지만, this 바인딩에서 차이가
             있기 때문에 화살표 함수를 사용하고 있습니다.
@@ -172,7 +171,7 @@ export default function Javascript() {
         <div className="h2">
             async 함수
         </div>
-        <img src={async1} alt="async1" />
+        <img className="p" src={async1} alt="async1" />
         <div className="h">
             위에 있는 코드처럼 함수 앞에 async만 붙여주면 promise로 변환되어
             작동되는 것을 알 수 있습니다.
@@ -180,7 +179,7 @@ export default function Javascript() {
         <div className="h2">
             await 함수
         </div>
-        <img src={await1} alt="await1" />
+        <img className="p" src={await1} alt="await1" />
         <div className="h">
             await 키워드는 async 함수 안에서만 사용되며 promise가 처리될 때까지
             기다려주는 역할을 맡고 있습니다. await가 있는 곳에서 프로그램의 흐름을 
@@ -210,8 +209,7 @@ export default function Javascript() {
             이상으로 자바스크립트 문법 포스팅을 마치겠습니다.<br />
             읽어주셔서 감사합니다!
         </div>
-
         <img className="thankl" src={thank} alt="thank" />
-    </>
+    </div>
   );
 }

@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     element: <Contact1 />,
   },
   {
-    path: "javascript/:javascriptsId",
+    path: "javascripts/:javascriptsId",
     element: <JavaScript />,
   },
 ]);

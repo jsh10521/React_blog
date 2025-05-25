@@ -5,9 +5,15 @@ export default function TopMenu() {
 
   return (
     <div className="but">
-      <button className='first' onClick={() => handleScroll("about-me")}>About Me</button>
-      <button className='second' onClick={() => handleScroll("skills")}>Skills</button>
-      <button className='third' onClick={() => handleScroll("career")}>Career</button>
+      <button className='first' onClick={() => handleScroll("about-me")}>
+        About Me
+      </button>
+      <button className='second' onClick={() => handleScroll("skills")}>
+        Skills
+      </button>
+      <button className='third' onClick={() => handleScroll("career")}>
+        Career
+      </button>
     </div>
   );
 }
