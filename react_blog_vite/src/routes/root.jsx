@@ -49,7 +49,6 @@ export default function Root() {
         <nav>
           <ul>
             <li><a href={`/`}>홈</a></li>
-            <li><a href={`/contacts/1`}>글쓰기</a></li>
             <li><a>Blog 목록</a></li>
             <li><a href={`/javascripts/1`}>- JavaScript</a></li>
           </ul>
